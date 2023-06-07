@@ -7,13 +7,15 @@ import IconPinia from '@/shared/components/icons/IconPinia.vue';
 <template>
   <header>
     <IconPinia/>
+  </header>
     <div class="wrapper">
       <h2>Eric Nova</h2>
       <nav>
         <RouterLink to="/">Counter Options</RouterLink>
+        <RouterLink to="/counter2">Counter Setup</RouterLink>
+        <RouterLink to="/clients">Clients</RouterLink>
       </nav>
     </div>
-  </header>
 
   <RouterView />
 </template>
@@ -65,7 +67,7 @@ nav a:first-of-type {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
